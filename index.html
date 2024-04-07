@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AdventureBound-TravelAgency</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/7279407.jpg" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet" /> -->
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" /> -->
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+  </head>
+
+  <body data-bs-spy="scroll" id="body">
+    <header class="fixed-top" id="">
+      <div class="webicon">
+        <img src="img/7279407.jpg" alt="" />
+        <p><span style="color: #0d6efd">Adventure</span> Bound</p>
+      </div>
+      <input type="checkbox" id="navcheck" hidden />
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" class="active"><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="#destination">Trending</a>
+          </li>
+          <li>
+            <a href="#package">Packages</a>
+          </li>
+          <li>
+            <a href="#hotel">Hotels</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#login" data-bs-toggle="modal"
+              ><i class="fas fa-user"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <label for="navcheck" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+
+    <div class="modal fade" id="login">
+      <div class="modal-dialog modal-xxl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="loginform">
+              <input type="checkbox" id="chk" aria-hidden="true" />
+              <div class="signup">
+                <form action="" class="need-validation">
+                  <label for="chk" class="form-label" aria-hidden="true"
+                    >Sign up</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="txt"
+                    placeholder="Enter Name"
+                    required
+                  />
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    placeholder="Enter Email"
+                    required
+                  />
+                  <input
+                    class="form-control"
+                    type="password"
+                    name="password"
+                    placeholder="Enter password"
+                    required
+                  />
+                  <button>Sign up</button>
+                </form>
+              </div>
+              <div class="login2">
+                <form action="">
+                  <label for="chk" class="form-label" aria-hidden="true"
+                    >Login</label
+                  >
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    placeholder="enter email"
+                    required
+                  />
+                  <input
+                    class="form-control"
+                    type="password"
+                    name="password"
+                    placeholder="enter password"
+                    required
+                  />
+                  <button>Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <section class="outer_contet" id="home">
+      <div class="video-container">
+        <video autoplay loop muted id="vdo">
+          <source
+            src="img/pexels_videos_1675442 (1080p).mp4"
+            type="video/webm"
+          />
+          <!-- Your browser does not support the video tag. -->
+        </video>
+      </div>
+      <div class="overlay"></div>
+      <div class="text-overlay">
+        <h1>Journey to<span style="color: white"> Explore</span></h1>
+        <p>
+          Enjoy Your Vacation With @Adventure Bound! <br />
+          Explore our curated collection of Packages
+        </p>
+        <a class="btn btn-outline-primary" href="package.html">Explore Now</a>
+        <div>
+          <button
+            style="border: none; background-color: #f1f2f3"
+            onclick="vdochange('img/video (2160p) (1).mp4')"
+          ></button>
+          <button
+            style="border: none; background-color: #f1f2f3"
+            onclick="vdochange('img/pexels-fearless-dreams-5598970 (2160p).mp4')"
+          ></button>
+          <button
+            style="border: none; background-color: #f1f2f3"
+            onclick="vdochange('img/pexels_videos_1409899 (2160p).mp4')"
+          ></button>
+          <button
+            style="border: none; background-color: #f1f2f3"
+            onclick="vdochange('img/pexels_videos_1675442 (1080p).mp4')"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- Destination Start -->
+    <div class="container-xxl py-5 destination" id="destination">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Destination
+          </h6>
+          <h1 class="mb-5">Popular Destination</h1>
+        </div>
+        <div class="row g-3 Box">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12">
+                <a
+                  class="position-relative d-block overflow-hidden"
+                  href="singapore.html"
+                >
+                  <img class="img-fluid" src="img/singapore1.jpeg" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    30% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    Singapore
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a
+                  class="position-relative d-block overflow-hidden"
+                  href="ul.html"
+                >
+                  <img class="img-fluid" src="img/7279407.jpg" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    25% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    UK-PARIS
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a
+                  class="position-relative d-block overflow-hidden"
+                  href="thailand.html"
+                >
+                  <img class="img-fluid" src="img/th3.jpeg" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    35% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    Thailand
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 col-md-6 wow zoomIn"
+            data-wow-delay="0.7s"
+            style="min-height: 350px"
+          >
+            <a
+              class="position-relative d-block h-100 overflow-hidden"
+              href="India.html"
+            >
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="img/kashmir1.jpeg"
+                alt=""
+                style="object-fit: cover"
+              />
+              <div
+                class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+              >
+                20% OFF
+              </div>
+              <div
+                class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+              >
+                Kashmir
+              </div>
+            </a>
+          </div>
+        </div>
+        <br />
+        <div class="row g-3 Box">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <a
+                  class="position-relative d-block overflow-hidden"
+                  href="switzerland.html"
+                >
+                  <img class="img-fluid" src="img/p1.jpeg.png" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    30% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    Switzerland
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a
+                  class="position-relative d-block overflow-hidden"
+                  href="austrelia.html"
+                >
+                  <img class="img-fluid" src="img/aus.jpeg" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    25% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    Austrelia
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a
+                  class="position-relative d-block overflow-hidden"
+                  href="hongkong.html"
+                >
+                  <img class="img-fluid" src="img/hk3.jpeg" alt="" />
+                  <div
+                    class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                  >
+                    35% OFF
+                  </div>
+                  <div
+                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                  >
+                    Hongkong
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 col-md-6 wow zoomIn"
+            data-wow-delay="0.7s"
+            style="min-height: 350px"
+          >
+            <a
+              class="position-relative d-block h-100 overflow-hidden"
+              href="dubai.html"
+            >
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="img/dubai2.jpeg"
+                alt=""
+                style="object-fit: cover"
+              />
+              <div
+                class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+              >
+                20% OFF
+              </div>
+              <div
+                class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+              >
+                Dubai
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </div>
+    <!-- </div> -->
+    <!-- Destination Start -->
+    <!-- package start -->
+    <br />
+    <div class="container-fluid py-5" id="package">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            Packages
+          </h6>
+          <h1>Pefect Tour Packages</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/uk2.jpeg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0"
+                    ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i
+                    >London</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>7
+                    days</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2/3/5
+                    Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="ul.html"
+                  >Explore the Worlds Most Beautiful Cities</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4
+                      <small>(250)</small>
+                    </h6>
+                    <h5 class="m-0">150000/-</h5>
+                    <a href="ul.html" class="btn btn-sm deatil-btn"
+                      >Get details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/singapore3.jpeg" alt="" />
+              <br /><br />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0"
+                    ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i
+                    >Singapore</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>3
+                    days</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2/3/7
+                    Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="singapore.html"
+                  >Discover amazing places of the Singapore with us</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+                    <!-- <button class="btn btn-sm deatil-btn">Get details</button> -->
+                    <h5 class="m-0">120000/-</h5>
+                    <a href="singapore.html" class="btn btn-sm deatil-btn"
+                      >Get details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/tajmahal.jpeg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0"
+                    ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i
+                    >India</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>7
+                    days</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2/3/5
+                    Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="India.html"
+                  >Explore Culture of India !!!</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>5
+                      <small>(250)</small>
+                    </h6>
+                    <!-- <button class="btn btn-sm deatil-btn">Get details</button> -->
+                    <h5 class="m-0">100000/-</h5>
+                    <a href="India.html" class="btn btn-sm deatil-btn"
+                      >Get details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/p4.jpg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0"
+                    ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i
+                    >Lakshdwips(INDIA)</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>3
+                    days</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2/5/6
+                    Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="India.html"
+                  >Discover amazing places near Sea</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+
+                    <h5 class="m-0">100000</h5>
+                    <a class="btn btn-sm deatil-btn" href="India.html"
+                      >Get details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/kashmir3.jpeg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3 p-3">
+                  <small class="m-0 justify-content-lg-end"
+                    ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i
+                    >Kashmir(INDIA)</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>4
+                    days</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2/3/5
+                    Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="kashmir.html"
+                  >Discover amazing places Ice-Mountains with us</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+                    <h5 class="m-0">60000/-</h5>
+                    <a href="kashmir.html" class="btn btn-sm deatil-btn"
+                      >Get details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/aus2.jpeg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0"
+                    ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i
+                    >Austrelia</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>7
+                    days</small
+                  >
+                  <small class="m-0"
+                    ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2/3/5
+                    Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="austrelia.html"
+                  >Discover amazing places of the world with us</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+
+                    <h5 class="m-0">150000/-</h5>
+                    <a href="austrelia.html" class="btn btn-sm deatil-btn"
+                      >Get details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="package.html" class="btn btn-primary w-25 d-block mx-auto"
+      >Explore More</a
+    >
+
+    <!-- Package End -->
+    <div id="information"></div>
+    <!-- cards starts -->
+    <br /><br /><br /><br />
+    <!--  -->
+    <!-- cards end -->
+    <!-- gallery starts -->
+    <div class="text-center mb-3 pb-3" id="information">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+        gallery
+      </h6>
+      <h1 class="text-center">Our Perfect Places</h1>
+    </div>
+    <!-- gallery starts -->
+    <div class="container-fluid">
+      <div class="content">
+        <div class="content-item">
+          <img src="load more button/ind1 (4).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">India</h3>
+          <a href="India.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/aus (2).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">Austrelia</h3>
+          <a href="austrelia.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/dubai (1).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">Dubai</h3>
+          <a href="dubai.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/thailand (4).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">Thailand</h3>
+          <a href="thailand.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/switzerland (3).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">Switzerland</h3>
+          <a
+            href="switzerland.html"
+            class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/uk (1).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">UK</h3>
+          <a href="ul.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/rus (2).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">Russia</h3>
+          <a href="russia.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/brazil (1).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">Brazil</h3>
+          <a href="brazil.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/sing (2).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">Singapore</h3>
+          <a href="singapore.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+        <div class="content-item">
+          <img src="load more button/hk (3).jpg" alt="" />
+          <h3 style="text-align: center; margin-top: 15px">Hongkong</h3>
+          <a href="hongkong.html" class="btn btn-primary w-25 d-block mx-auto"
+            >Book</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- gallery starts -->
+
+    <!-- gallery ends -->
+    <div id="hotel"></div>
+    <br /><br /><br />
+    <br /><br />
+    <div class="text-center mb-3 pb-3" id="information">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+        HOTELS
+      </h6>
+      <h1>Know About Some Hotels</h1>
+    </div>
+    <br /><br /><br />
+    <!-- hotels start -->
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img
+                src="img/h1.jpeg.jpg"
+                alt="San miguel, italy"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Dubai</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Burj Khalifa</a>
+              </h3>
+
+              <p class="card-text">
+                Its the world tallest Hotel in world.it contains Luxury
+                Apartments in Dubai
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img
+                src="img/h3.jpeg.jpg"
+                alt="San miguel, italy"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Mumbai</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Taj Hotel</a>
+              </h3>
+
+              <p class="card-text">
+                Taj Hotel is most Famous Hotel in India with Luxury Rooms.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img
+                src="img/h2.jpeg.jpg"
+                alt="San miguel, italy"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Dubai</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Atlantis The Palm</a>
+              </h3>
+
+              <p class="card-text">
+                It located in Dubai at Sea Shore.very popular hotel in world for
+                touristers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img
+                src="img/singapore2.jpeg"
+                alt="San miguel, italy"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Singapore</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Paradox Merchant</a>
+              </h3>
+
+              <p class="card-text">
+                Hotel Paradox Merchant could strive to offer guests a truly
+                unique and memorable
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img src="img/th2.jpeg" alt="San miguel, italy" loading="lazy" />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Russia</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Hotel Moscou</a>
+              </h3>
+
+              <p class="card-text">
+                : Hotel Moscou likely offers a variety of rooms and suites,
+                ranging from standard t
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img src="img/uk2.jpeg" alt="San miguel, italy" loading="lazy" />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">London UK</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Pan Pacific</a>
+              </h3>
+
+              <p class="card-text">
+                Pan Pacific Hotel in Singapore, located in the Marina Bay area
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hotels end -->
+    <br /><br /><br />
+    <!-- Booking Start -->
+    <div
+      class="container-xxl py-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+      id="book"
+    >
+      <div class="container">
+        <div class="booking p-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-md-6 text-white">
+              <h6 class="text-white text-uppercase">Booking</h6>
+              <h1 class="text-white mb-4">Online Booking</h1>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet
+              </p>
+              <a class="btn btn-outline-light py-3 px-5 mt-2" href=""
+                >Read More</a
+              >
+            </div>
+            <div class="col-md-6">
+              <h1 class="text-white mb-4">Book A Tour</h1>
+              <form class="was-validated">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control bg-transparent"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control bg-transparent"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        maxlength="10"
+                        class="form-control bg-transparent"
+                        id="number"
+                        placeholder="Your PhoneNo"
+                        required
+                      />
+                      <label for="number">Your Contact Number</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        placeholder="Number Of Person "
+                        class="form-control bg-transparent"
+                        required
+                        id="number"
+                      />
+                      <label for="number">Number Of persons</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating" required>
+                      <select class="form-select bg-transparent" id="select1">
+                        <option value="0" selected disabled hidden>
+                          Choose a Destination
+                        </option>
+                        <option value="1">Kashmir</option>
+                        <option value="1">Agra</option>
+                        <option value="1">Singapore</option>
+                        <option value="1">Dubai</option>
+                        <option value="1">Switzerland</option>
+                        <option value="1">Lakshdwips</option>
+                        <option value="1">Russia</option>
+                        <option value="2">Thailand</option>
+                        <option value="3">Brazil</option>
+                        <option value="3">Hawai</option>
+                        <option value="3">Austrelia</option>
+                        <option value="3">Hongkong</option>
+                        <option value="3">UK</option>
+                      </select>
+                      <label for="select1">Destination</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select
+                        class="form-select bg-transparent"
+                        id="select1"
+                        required
+                      >
+                        <option value="0" selected disabled hidden>
+                          Choose a Hotel
+                        </option>
+                        <optgroup label="INDIA">
+                          <option value="1">Taj Hotel</option>
+                          <option value="2">ITC Narmad</option>
+                          <option value="3">Jaipur</option>
+                        </optgroup>
+                        <optgroup label="DUBAI">
+                          <option value="1">Burj Khalifa</option>
+                          <option value="2">Atlantis the Palm</option>
+                          <option value="3">Noor Arab</option>
+                        </optgroup>
+                        <optgroup label="BRAZIL">
+                          <option value="1">Hotel Manaus</option>
+                          <option value="2">Golden Tulip</option>
+                          <option value="3">Brasilla Palace</option>
+                        </optgroup>
+                        <optgroup label="SINGAPORE">
+                          <option value="1">Marina Bay</option>
+                          <option value="2">Fullerton Hotel</option>
+                          <option value="3">Cruise</option>
+                        </optgroup>
+                        <optgroup label="THAILAND">
+                          <option value="1">Phra Singh Village</option>
+                          <option value="2">Amari Bangkok</option>
+                          <option value="3">Centara Kata</option>
+                        </optgroup>
+                      </select>
+                      <label for="select1">Destination</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div
+                      class="form-floating date"
+                      id="date3"
+                      data-target-input="nearest"
+                    >
+                      <input
+                        type="text"
+                        class="form-control bg-transparent datetimepicker-input"
+                        id="datetime"
+                        placeholder="Date & Time"
+                        data-target="#date3"
+                        data-toggle="datetimepicker"
+                        required
+                      />
+                      <label for="datetime">Date & Time</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="checkbox"
+                        required
+                      />
+                      <lable>I agree while submitting details i'm stable</lable>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      class="btn btn-outline-light w-100 py-3"
+                      type="submit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#confirm"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="modal fade" id="confirm">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                We have got your Details we'll Contact You earlier and Discuss
+                about your trip Soon...
+              </p>
+              <h4>Thank You !!</h4>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-dismiss="modal">
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Booking end -->
+
+    <!-- service -->
+    <div class="container-xxl py-5" id="service">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Services
+          </h6>
+          <h1 class="mb-5">Our Services</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                <h5>WorldWide Tours</h5>
+                <p>
+                  At World Wide Tours, we believe that the world is meant to be
+                  explored, and every journey is an opportunity
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                <h5>Hotel Reservation</h5>
+                <p>
+                  Looking for the perfect place to rest your head after a day of
+                  exploration? Look no further than @Adventure Bound !
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                <h5>Travel Guides</h5>
+                <p>
+                  Embark on a journey of discovery with the expert guidance of
+                  @Adventure Bound ! experienced travel guides
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                <h5>Event Management</h5>
+                <p>
+                  Planning a special event or celebration? Let @Adventure Bound!
+                  take the stress out of event management, leaving you free to
+                  enjoy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- service -->
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+      <div class="container">
+        <div class="row g-5">
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="min-height: 400px"
+          >
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="img/t1.jpg"
+                alt=""
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <h6 class="section-title bg-white text-start text-primary pe-3">
+              About Us
+            </h6>
+            <h1 class="mb-4">
+              Welcome to <span class="text-primary">Adventure Bound</span>
+            </h1>
+            <p class="mb-4">
+              your ultimate guide to unforgettable adventures and immersive
+              experiences around the globe. At @adventure bound, we're
+              passionate about exploring the world and helping travelers like
+              you discover new destinations, cultures, and adventures.
+            </p>
+            <p class="mb-4">
+              Our mission is to inspire and empower you to create lifelong
+              memories through travel. Whether you're seeking adrenaline-pumping
+              adventures,
+            </p>
+            <div class="row gy-2 gx-4 mb-4">
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>First Class
+                  Flights
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>Handpicked
+                  Hotels
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>5 Star
+                  Accommodations
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>Latest
+                  Model Vehicles
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>10 Premium
+                  City Tours
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>24/7
+                  Service
+                </p>
+              </div>
+            </div>
+            <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Company</h4>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Privacy Policy</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="">FAQs & Help</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Contact</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>New Ranip , Ahmedabad
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>1800-1800-1800
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>adventurebound@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Gallery</h4>
+            <div class="row g-2 pt-2">
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid bg-light p-1"
+                  src="img/package-1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Email</h4>
+            <p>For any Query or Bussiness related Talks</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control border-primary w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">adventureBound</a>, All
+              Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="">Home</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/m2.js"></script>
+  </body>
+</html>
